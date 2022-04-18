@@ -21,3 +21,4 @@ for (let i = 0; i < ingredients.length; i++) {
 }
 
 listEl.append(...newlist);
+console.log(newlist);
