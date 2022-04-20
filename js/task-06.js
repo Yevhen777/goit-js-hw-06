@@ -1,11 +1,6 @@
 const inputText = document.querySelector('input[data-length="6"]');
 
-// inputText.addEventListener("focus", focusInput);
 inputText.addEventListener("blur", focusBlur);
-
-// function focusInput() {
-//   console.log("Инпут в фокусе");
-// }
 
 function focusBlur(event) {
   const formElement = event.currentTarget.value;
