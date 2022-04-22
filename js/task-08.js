@@ -1,7 +1,4 @@
 const form = document.querySelector(".login-form");
-const formLabel = document.querySelector("label");
-const formInput = document.querySelector("input");
-const formBtn = document.querySelector("button");
 
 form.addEventListener("submit", formSubmit);
 
