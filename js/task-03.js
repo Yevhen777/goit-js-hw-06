@@ -16,14 +16,11 @@ const images = [
 const galleryEl = document.querySelector("ul");
 
 const names = images.map((image) => {
-  const liEl = document.createElement("li");
-
-  liEl.innerHTML = `<img src="${image.url}" alt="${image.alt}"/>`;
-
-  return liEl;
+  return `<li><img src="${image.url}" alt="${image.alt} height="80%" width="80%""/></li>`;
 });
-galleryEl.append(...names);
 
 galleryEl.style.display = "flex";
 galleryEl.style.backgroundColor = "tomato";
-console.log(galleryEl.firstChild);
+galleryEl.style.listStyleType = "none";
+
+galleryEl.insertAdjacentHTML("beforeend", names.join(""));
