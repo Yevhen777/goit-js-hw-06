@@ -6,10 +6,15 @@ function formSubmit(event) {
   event.preventDefault();
   const passwordValue = event.currentTarget.elements.password.value;
   const emailValue = event.currentTarget.elements.email.value;
-  console.log(event.currentTarget.elements.password.value);
+  console.log(
+    event.currentTarget.elements.email.value,
+    event.currentTarget.elements.password.value
+  );
 
   if (passwordValue === "" || emailValue === "") {
     alert("Поля должны быть заполнены.");
+  } else {
+    event.currentTarget.reset();
   }
 
   const email = emailValue;
@@ -19,5 +24,4 @@ function formSubmit(event) {
     email,
     password,
   };
-  event.currentTarget.reset();
 }

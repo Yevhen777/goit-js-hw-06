@@ -16,7 +16,7 @@ const images = [
 const galleryEl = document.querySelector("ul");
 
 const names = images.map((image) => {
-  return `<li><img src="${image.url}" alt="${image.alt} height="80%" width="80%""/></li>`;
+  return `<li><img src="${image.url}" alt="${image.alt}" height="80%" width="80%"/></li>`;
 });
 
 galleryEl.style.display = "flex";

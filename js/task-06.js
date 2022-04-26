@@ -8,7 +8,9 @@ function focusBlur(event) {
   console.dir(event);
   if (formElement.length == inputText.dataset.length) {
     inputText.classList.add("valid");
+    inputText.classList.remove("invalid");
   } else {
+    inputText.classList.remove("valid");
     inputText.classList.add("invalid");
   }
 }
